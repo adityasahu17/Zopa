@@ -58,14 +58,12 @@ public class App {
 			Double loan = Double.valueOf(loanAmount);
 			if (loan < MIN_AMOUNT || loan > MAX_AMOUNT || loan % AMOUNT_STEP != 0) {
 				throw new IllegalArgumentException(
-						"Error: Invalid amount [" + loan + "], any 100 between 1000 and 15000");
+						"Invalid loan amount [" + loan + "], any 100 between 1000 and 15000");
 			}
 			return true;
 		} catch (NumberFormatException ex) {
-			System.out.println("Invalid amount [" + loanAmount + "], any 100 between 1000 and 15000");
-		} catch (IllegalArgumentException ex) {
-			System.out.println(ex.getMessage());
-		}
+			System.out.println("Invalid loan amount [" + loanAmount + "], any 100 between 1000 and 15000");
+		} 
 		return false;
 	}
 
