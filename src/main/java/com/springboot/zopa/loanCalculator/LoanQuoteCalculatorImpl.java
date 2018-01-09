@@ -24,6 +24,10 @@ public class LoanQuoteCalculatorImpl implements LoanQuoteCalculator {
 				roundOff.roundOffDouble(totalRepayment));
 	}
 
+/*
+ *  Comparator to find the Minimum Rate of interest from the list of Lenders
+ * 
+ */
 	private Lender getMinRateLender(List<Lender> lenders) {
 
 		lenders.sort(new Comparator<Lender>() {
@@ -38,6 +42,10 @@ public class LoanQuoteCalculatorImpl implements LoanQuoteCalculator {
 		return lender;
 	}
 
+  /*
+   *  Simple Repayment formula
+   * 
+   */	
 	private Double calculateRepayment(Double rate, Integer loanAmount) {
 		double monthlyRate = rate / 12;
 		double repayment = loanAmount
