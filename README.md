@@ -11,3 +11,8 @@ $ ./App /Users/tanvimehra/Desktop/Aditya_Docs/Zopa-master/src/main/resources/mar
     Rate: 6.9%
     Monthly Payment: £37.0
     Total Repayment: £1331.92
+    
+    
+ Or else,
+ 
+ Its a simple maven project just do mvn clean install and then the above steps.
